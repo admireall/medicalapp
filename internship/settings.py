@@ -74,7 +74,7 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),  # Refresh token valid for 30 days
 }
 import os
-CELERY_BROKER_URL = os.getenv("REDIS_URL", "redis://redis:6379/0")
+CELERY_BROKER_URL = os.getenv("REDIS_URL", "redis://red-cuivpgt6l47c73al0us0:6379")
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
